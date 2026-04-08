@@ -1,0 +1,93 @@
+Configuration on demand is an incubating feature.
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:generateDebugResValues UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :app:processDebugMainManifest UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+> Task :app:processDebugResources UP-TO-DATE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:mergeDebugShaders UP-TO-DATE
+> Task :app:compileDebugShaders NO-SOURCE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets UP-TO-DATE
+> Task :app:compressDebugAssets UP-TO-DATE
+> Task :app:desugarDebugFileDependencies UP-TO-DATE
+> Task :app:checkDebugDuplicateClasses UP-TO-DATE
+> Task :app:mergeExtDexDebug UP-TO-DATE
+> Task :app:mergeLibDexDebug UP-TO-DATE
+> Task :app:mergeDebugJniLibFolders UP-TO-DATE
+> Task :app:mergeDebugNativeLibs UP-TO-DATE
+> Task :app:stripDebugDebugSymbols UP-TO-DATE
+> Task :app:validateSigningDebug UP-TO-DATE
+> Task :app:writeDebugAppMetadata UP-TO-DATE
+> Task :app:writeDebugSigningConfigVersions UP-TO-DATE
+> Task :app:kspDebugKotlin
+
+> Task :app:compileDebugKotlin FAILED
+.\gradlew.bat : e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/MainViewModel.kt:259:24 Unresolved reference 'getAllGoals'.
+At line:1 char:1
++ .\gradlew.bat assembleDebug 2>&1 | Out-File "build_log_section5.txt"  ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (e    : file:///C:/U... 'getAllGoals'.:String) [    ], RemoteException
+    + FullyQualifiedErrorId : NativeCommandErr    or
+ 
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/MainViewModel.kt:259:48 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/screens/DashboardScreen.kt:144:43 Unresolved reference 'RoundedCornerShape'.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/screens/GoalsScreen.kt:106:41 No parameter with name 'label' found.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/screens/GoalsScreen.kt:107:41 No parameter with name 'isSelected' found.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/screens/GoalsScreen.kt:108:41 No parameter with name 'selectedColor' found.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/screens/GoalsScreen.kt:108:41 No value passed for parameter 'text'.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/screens/GoalsScreen.kt:108:41 No value passed for parameter 'selected'.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/screens/GoalsScreen.kt:108:41 No value passed for parameter 'onClick'.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/screens/GoalsScreen.kt:165:29 No parameter with name 'color' found.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/screens/GoalsScreen.kt:196:27 Unresolved reference 'viewModelScope'.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/screens/GoalsScreen.kt:197:31 Cannot access 'val repository: PesaRepository': it is private in 'com/axis/app/ui/MainViewModel'.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/screens/GoalsScreen.kt:197:42 Suspend function 'suspend fun upsertGoal(goal: SavingsGoal): Unit' should be called only from a coroutine or another suspend function.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/screens/GoalsScreen.kt:251:21 No parameter with name 'label' found.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/screens/GoalsScreen.kt:252:21 No value passed for parameter 'placeholder'.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/screens/GoalsScreen.kt:257:21 No parameter with name 'label' found.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/screens/GoalsScreen.kt:258:21 No value passed for parameter 'placeholder'.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/util/NotificationHelper.kt:5:20 Unresolved reference 'PendingCorner'.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/util/NotificationHelper.kt:11:21 Unresolved reference 'MainActivity'.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/util/NotificationHelper.kt:33:38 Unresolved reference 'MainActivity'.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/util/NotificationHelper.kt:33:58 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/util/NotificationHelper.kt:33:58 Unresolved reference. None of the following candidates is applicable because of a receiver type mismatch:
+val <T> KClass<T>.java: Class<T>
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/util/NotificationHelper.kt:33:64 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/util/NotificationHelper.kt:33:64 Unresolved reference. None of the following candidates is applicable because of a receiver type mismatch:
+fun <T> T.apply(block: T.() -> Unit): T
+    [R|Contract description]
+     <
+        CallsInPlace(block, EXACTLY_ONCE)
+    >
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/util/NotificationHelper.kt:33:70 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/util/NotificationHelper.kt:34:13 Unresolved reference 'flags'.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/work/SavingsReminderWorker.kt:6:35 Unresolved reference 'AxisDatabase'.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/work/SavingsReminderWorker.kt:23:18 Unresolved reference 'AxisDatabase'.
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileDebugKotlin'.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+   > Compilation error. See log for more details
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 40s
+29 actionable tasks: 2 executed, 27 up-to-date

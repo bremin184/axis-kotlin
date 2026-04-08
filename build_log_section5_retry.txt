@@ -1,0 +1,83 @@
+Configuration on demand is an incubating feature.
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:generateDebugResValues UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :app:processDebugMainManifest UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+> Task :app:processDebugResources UP-TO-DATE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:mergeDebugShaders UP-TO-DATE
+> Task :app:compileDebugShaders NO-SOURCE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets UP-TO-DATE
+> Task :app:compressDebugAssets UP-TO-DATE
+> Task :app:desugarDebugFileDependencies UP-TO-DATE
+> Task :app:checkDebugDuplicateClasses UP-TO-DATE
+> Task :app:mergeExtDexDebug UP-TO-DATE
+> Task :app:mergeLibDexDebug UP-TO-DATE
+> Task :app:mergeDebugJniLibFolders UP-TO-DATE
+> Task :app:mergeDebugNativeLibs UP-TO-DATE
+> Task :app:stripDebugDebugSymbols UP-TO-DATE
+> Task :app:validateSigningDebug UP-TO-DATE
+> Task :app:writeDebugAppMetadata UP-TO-DATE
+> Task :app:writeDebugSigningConfigVersions UP-TO-DATE
+
+> Task :app:kspDebugKotlin FAILED
+.\gradlew.bat : e: [ksp] C:/Users/bremi/Androidprojects/pesa app - Copy - Copy/app/src/main/java/com/axis/app/ui/screens/GoalsScreen.kt: (298, 44): Function declaration must have a name
+At line:1 char:1
++ .\gradlew.bat assembleDebug 2>&1 | Out-File "build_log_section5_retry ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (e    : [ksp] C:/Use...ust have a name:String) [    ], RemoteException
+    + FullyQualifiedErrorId : NativeCommandErr    or
+ 
+e: Error occurred in KSP, check log for detail
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/screens/GoalsScreen.kt:298:17 Expecting a top level declaration
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/screens/GoalsScreen.kt:298:20 Expecting a top level declaration
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/screens/GoalsScreen.kt:298:21 Expecting a top level declaration
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/screens/GoalsScreen.kt:298:29 Expecting a top level declaration
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/screens/GoalsScreen.kt:298:30 Expecting a top level declaration
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/screens/GoalsScreen.kt:298:40 Expecting a top level declaration
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/screens/GoalsScreen.kt:298:41 Expecting a top level declaration
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/screens/GoalsScreen.kt:298:42 Expecting a top level declaration
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/screens/GoalsScreen.kt:298:44 Expecting a top level declaration
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/screens/GoalsScreen.kt:325:19 Expecting a top level declaration
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/screens/GoalsScreen.kt:325:24 Expecting a top level declaration
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/screens/GoalsScreen.kt:328:13 Expecting a top level declaration
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/screens/GoalsScreen.kt:329:9 Expecting a top level declaration
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/screens/GoalsScreen.kt:329:10 Expecting a top level declaration
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/screens/GoalsScreen.kt:330:9 Expecting a top level declaration
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/screens/GoalsScreen.kt:330:24 Expecting a top level declaration
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/screens/GoalsScreen.kt:330:26 Expecting a top level declaration
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/screens/GoalsScreen.kt:330:34 Expecting a top level declaration
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/screens/GoalsScreen.kt:330:35 Expecting a top level declaration
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/screens/GoalsScreen.kt:330:44 Expecting a top level declaration
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/screens/GoalsScreen.kt:330:45 Expecting a top level declaration
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/screens/GoalsScreen.kt:331:5 Expecting a top level declaration
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/screens/GoalsScreen.kt:332:1 Expecting a top level declaration
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:kspDebugKotlin'.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+   > Compilation error. See log for more details
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 24s
+28 actionable tasks: 1 executed, 27 up-to-date

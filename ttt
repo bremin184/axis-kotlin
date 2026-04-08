@@ -1,0 +1,52 @@
+BudgetApp/                      <-- Root project folder
+│
+├─ app/
+│  ├─ src/
+│  │  ├─ main/
+│  │  │  ├─ AndroidManifest.xml        <-- Permissions, main app info
+│  │  │  ├─ java/com/yourname/budgetapp/
+│  │  │  │  ├─ MainActivity.kt        <-- Entry point, dashboard launcher
+│  │  │  │  ├─ parser/
+│  │  │  │  │  ├─ MpesaParser.kt     <-- SMS parsing & extraction
+│  │  │  │  │  ├─ RegexPatterns.kt   <-- All regex patterns for M-Pesa messages
+│  │  │  │  ├─ models/
+│  │  │  │  │  ├─ Transaction.kt     <-- Data class for transactions
+│  │  │  │  │  ├─ BudgetCategory.kt  <-- Category data
+│  │  │  │  │  ├─ FundType.kt        <-- Personal / Pochi / Till / Mshwari / Ziddi
+│  │  │  │  ├─ database/
+│  │  │  │  │  ├─ AppDatabase.kt     <-- Room database setup
+│  │  │  │  │  ├─ TransactionDao.kt  <-- Queries for transactions
+│  │  │  │  ├─ engines/
+│  │  │  │  │  ├─ BudgetEngine.kt    <-- Categorization & budget logic
+│  │  │  │  │  ├─ GoalEngine.kt      <-- Goal projection logic
+│  │  │  │  │  ├─ HealthScore.kt     <-- Financial health calculation
+│  │  │  │  ├─ ui/
+│  │  │  │  │  ├─ DashboardFragment.kt
+│  │  │  │  │  ├─ TransactionsFragment.kt
+│  │  │  │  │  ├─ BudgetSetupFragment.kt
+│  │  │  │  │  ├─ GoalSetupFragment.kt
+│  │  │  │  │  ├─ FundDetailFragment.kt  <-- Shows Pochi, Mshwari, Ziddi, etc.
+│  │  │  │  ├─ utils/
+│  │  │  │  │  ├─ PermissionHelper.kt   <-- SMS permissions helper
+│  │  │  │  │  ├─ DateUtils.kt          <-- Date parsing/formatting
+│  │  │  │  │  ├─ CurrencyFormatter.kt  <-- Format Ksh amounts
+│  │  │  ├─ res/
+│  │  │  │  ├─ layout/
+│  │  │  │  │  ├─ activity_main.xml
+│  │  │  │  │  ├─ fragment_dashboard.xml
+│  │  │  │  │  ├─ fragment_transactions.xml
+│  │  │  │  │  ├─ fragment_budget_setup.xml
+│  │  │  │  │  ├─ fragment_goal_setup.xml
+│  │  │  │  │  ├─ fragment_fund_detail.xml
+│  │  │  │  ├─ drawable/                  <-- Icons, images
+│  │  │  │  ├─ values/
+│  │  │  │  │  ├─ colors.xml
+│  │  │  │  │  ├─ strings.xml
+│  │  │  │  │  ├─ styles.xml
+│  │  │  ├─ assets/                        <-- Optional: sample SMS JSON or CSV
+│  │  ├─ test/                             <-- Unit tests
+│  │  ├─ androidTest/                       <-- UI & integration tests
+│
+├─ build.gradle
+├─ settings.gradle
+└─ gradle/ etc

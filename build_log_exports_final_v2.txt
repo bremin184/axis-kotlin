@@ -1,0 +1,93 @@
+Configuration on demand is an incubating feature.
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:generateDebugResValues UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :app:processDebugMainManifest UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+> Task :app:processDebugResources UP-TO-DATE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:mergeDebugShaders UP-TO-DATE
+> Task :app:compileDebugShaders NO-SOURCE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets UP-TO-DATE
+> Task :app:compressDebugAssets UP-TO-DATE
+> Task :app:desugarDebugFileDependencies UP-TO-DATE
+> Task :app:checkDebugDuplicateClasses UP-TO-DATE
+> Task :app:mergeExtDexDebug UP-TO-DATE
+> Task :app:mergeLibDexDebug UP-TO-DATE
+> Task :app:mergeDebugJniLibFolders UP-TO-DATE
+> Task :app:mergeDebugNativeLibs UP-TO-DATE
+> Task :app:stripDebugDebugSymbols UP-TO-DATE
+> Task :app:validateSigningDebug UP-TO-DATE
+> Task :app:writeDebugAppMetadata UP-TO-DATE
+> Task :app:writeDebugSigningConfigVersions UP-TO-DATE
+> Task :app:kspDebugKotlin
+
+> Task :app:compileDebugKotlin FAILED
+.\gradlew.bat : e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/data/repository/TransactionRepository.kt:14:1 Class 'TransactionRepository' is not abstract and does not implement abstract member 'insertTransactions'.
+At line:1 char:1
++ .\gradlew.bat assembleDebug 2>&1 | Out-File "build_log_exports_final_ ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (e    : file:///C:/U...tTransactions'.:String) [    ], RemoteException
+    + FullyQualifiedErrorId : NativeCommandErr    or
+ 
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/data/repository/TransactionRepository.kt:30:35 Type of 'allTransactions' is not a subtype of overridden property 'val allTransactions: Flow<List<Transaction>>' defined in 'com/axis/app/data/repository/PesaRepository'.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/data/repository/TransactionRepository.kt:30:45 Overload resolution ambiguity between candidates:
+annotation class Transaction : Annotation
+data class Transaction : Any
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/data/repository/TransactionRepository.kt:33:48 Overload resolution ambiguity between candidates:
+annotation class Transaction : Annotation
+data class Transaction : Any
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/data/repository/TransactionRepository.kt:35:52 Unresolved reference 'transactionCode'.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/data/repository/TransactionRepository.kt:39:5 'insertTransactions' overrides nothing.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/data/repository/TransactionRepository.kt:39:64 Overload resolution ambiguity between candidates:
+annotation class Transaction : Annotation
+data class Transaction : Any
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/data/repository/TransactionRepository.kt:42:32 Overload resolution ambiguity between candidates:
+annotation class Transaction : Annotation
+data class Transaction : Any
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/data/repository/TransactionRepository.kt:43:32 Suspension functions can only be called within coroutine body.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/data/repository/TransactionRepository.kt:43:47 Unresolved reference 'transactionCode'.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/data/repository/TransactionRepository.kt:47:43 Unresolved reference 'recipient'.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/data/repository/TransactionRepository.kt:48:54 Suspension functions can only be called within coroutine body.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/data/repository/TransactionRepository.kt:48:73 Unresolved reference 'recipient'.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/data/repository/TransactionRepository.kt:50:28 Unresolved reference 'copy'.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/data/repository/TransactionRepository.kt:54:32 Suspension functions can only be called within coroutine body.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/data/repository/TransactionRepository.kt:58:17 Suspension functions can only be called within coroutine body.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/data/repository/TransactionRepository.kt:64:49 Overload resolution ambiguity between candidates:
+annotation class Transaction : Annotation
+data class Transaction : Any
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/data/repository/TransactionRepository.kt:65:24 Unresolved reference 'rawMessage'.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/data/repository/TransactionRepository.kt:81:49 Unresolved reference 'balanceAfter'.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/data/repository/TransactionRepository.kt:81:70 Unresolved reference 'balanceAfter'.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/data/repository/TransactionRepository.kt:95:38 Unresolved reference 'balanceAfter'.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/data/repository/TransactionRepository.kt:168:86 Overload resolution ambiguity between candidates:
+annotation class Transaction : Annotation
+data class Transaction : Any
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileDebugKotlin'.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+   > Compilation error. See log for more details
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 5s
+29 actionable tasks: 2 executed, 27 up-to-date

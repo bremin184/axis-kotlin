@@ -1,0 +1,86 @@
+Configuration on demand is an incubating feature.
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:generateDebugResValues UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths
+> Task :app:generateDebugResources
+> Task :app:packageDebugResources
+> Task :app:mergeDebugResources
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :app:processDebugMainManifest UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+> Task :app:parseDebugLocalResources
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:mergeDebugShaders UP-TO-DATE
+> Task :app:compileDebugShaders NO-SOURCE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets UP-TO-DATE
+> Task :app:compressDebugAssets UP-TO-DATE
+> Task :app:desugarDebugFileDependencies UP-TO-DATE
+> Task :app:checkDebugDuplicateClasses UP-TO-DATE
+> Task :app:mergeExtDexDebug UP-TO-DATE
+> Task :app:mergeLibDexDebug UP-TO-DATE
+> Task :app:mergeDebugJniLibFolders UP-TO-DATE
+> Task :app:mergeDebugNativeLibs UP-TO-DATE
+> Task :app:stripDebugDebugSymbols UP-TO-DATE
+> Task :app:validateSigningDebug UP-TO-DATE
+> Task :app:writeDebugAppMetadata UP-TO-DATE
+> Task :app:writeDebugSigningConfigVersions UP-TO-DATE
+> Task :app:processDebugResources
+> Task :app:kspDebugKotlin
+
+> Task :app:compileDebugKotlin FAILED
+.\gradlew.bat : e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/data/repository/TransactionRepository.kt:12:1 Class 'TransactionRepository' is not abstract and does not implement abstract member 'clearAllData'.
+At line:1 char:1
++ .\gradlew.bat assembleDebug 2>&1 | Out-File "build_log_exports_final. ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (e    : file:///C:/U...'clearAllData'.:String) [    ], RemoteException
+    + FullyQualifiedErrorId : NativeCommandErr    or
+ 
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/data/repository/TransactionRepository.kt:312:28 Suspension functions can only be called within coroutine body.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/data/repository/TransactionRepository.kt:313:23 Suspension functions can only be called within coroutine body.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/data/repository/TransactionRepository.kt:314:28 Suspension functions can only be called within coroutine body.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/data/repository/TransactionRepository.kt:315:35 Suspension functions can only be called within coroutine body.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/data/repository/TransactionRepository.kt:316:31 Suspension functions can only be called within coroutine body.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/data/repository/TransactionRepository.kt:318:24 Suspension functions can only be called within coroutine body.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/data/repository/TransactionRepository.kt:319:28 Suspension functions can only be called within coroutine body.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/MainViewModel.kt:402:5 Conflicting overloads:
+fun clearAllData(): Unit
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/MainViewModel.kt:465:67 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/MainViewModel.kt:465:67 Not enough information to infer type argument for 'K'.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/MainViewModel.kt:465:67 Not enough information to infer type argument for 'V'.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/MainViewModel.kt:465:82 Unresolved reference 'categoryName'.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/MainViewModel.kt:465:95 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/MainViewModel.kt:465:95 Not enough information to infer type argument for 'B'.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/MainViewModel.kt:485:68 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/MainViewModel.kt:485:68 Not enough information to infer type argument for 'R'.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/MainViewModel.kt:485:72 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/MainViewModel.kt:485:77 Unresolved reference 'categoryName'.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/MainViewModel.kt:485:90 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/MainViewModel.kt:485:90 Not enough information to infer type argument for 'B'.
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/MainViewModel.kt:533:5 Conflicting overloads:
+fun clearAllData(): Unit
+e: file:///C:/Users/bremi/Androidprojects/pesa%20app%20-%20Copy%20-%20Copy/app/src/main/java/com/axis/app/ui/screens/SettingsScreen.kt:366:48 Overload resolution ambiguity between candidates:
+fun clearAllData(): Unit
+fun clearAllData(): Unit
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileDebugKotlin'.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+   > Compilation error. See log for more details
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 29s
+29 actionable tasks: 8 executed, 21 up-to-date

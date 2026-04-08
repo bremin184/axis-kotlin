@@ -1,0 +1,33 @@
+Configuration on demand is an incubating feature.
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:checkDebugAarMetadata FAILED
+.\gradlew.bat : 
+At line:1 char:1
++ .\gradlew.bat assembleDebug 2>&1 | Out-File "build_log_settings_v3.tx ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:    String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandErr    or
+ 
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:checkDebugAarMetadata'.
+> Could not resolve all files for configuration ':app:debugRuntimeClasspath'.
+   > Could not find androidx.biometric:biometric-ktx:1.1.0.
+     Searched in the following locations:
+       - https://dl.google.com/dl/android/maven2/androidx/biometric/biometric-ktx/1.1.0/biometric-ktx-1.1.0.pom
+       - https://repo.maven.apache.org/maven2/androidx/biometric/biometric-ktx/1.1.0/biometric-ktx-1.1.0.pom
+     Required by:
+         project :app
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 32s
+1 actionable task: 1 executed

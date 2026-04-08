@@ -1,0 +1,23 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Gradle / Android
+.gradle/
+build/
+captures/
+.externalNativeBuild/
+
+# IntelliJ / Android Studio
+.idea/
+*.iml
+*.hprof
+
+# Kotlin
+*.kotlin_module
+*.class
+
+# Logs
+*.log
+*.hprof
+# Misc
+local.properties
