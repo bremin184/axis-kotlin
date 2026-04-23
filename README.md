@@ -154,3 +154,89 @@ Composite score (0–100) based on:
 ---
 
 ### Project Structure
+---
+
+### Core Components
+
+#### Parser Layer
+- `MpesaParser.kt`
+- `RegexPatterns.kt`
+
+#### Data Layer
+- `Transaction.kt`
+- `FundType.kt`
+- `BudgetCategory.kt`
+
+#### Business Logic
+- `BudgetEngine.kt`
+- `GoalEngine.kt`
+- `HealthScore.kt`
+
+#### Storage
+- Room Database (`AppDatabase.kt`)
+- DAO interfaces for transactions
+
+---
+
+## Development Phases
+
+### Phase 1 — MVP
+- SMS parsing (sample + manual input)
+- Basic UI (dashboard + transaction list)
+- Simple categorization
+
+### Phase 2 — Core Features
+- Real SMS inbox integration
+- Budget engine
+- Fund differentiation
+- Goal projection
+
+### Phase 3 — Intelligence Layer
+- Micro-spending detection
+- Financial health scoring
+- Pattern recognition
+
+### Phase 4 — Advanced
+- OCR receipt ingestion
+- Predictive analytics
+- Behavioral insights
+
+---
+
+## Limitations
+
+- SMS access is **Android-only** (not supported on iOS).
+- Web version cannot access SMS directly:
+  - Uses manual paste / CSV import / demo data instead.
+- Regex parsing may require updates as M-Pesa formats evolve.
+
+---
+
+## Future Enhancements
+
+- Machine learning-based transaction classification
+- Spending prediction models
+- Credit scoring from behavioral data
+- Cloud sync (optional, encrypted)
+- Multi-device support
+
+---
+
+## Use Case Relevance
+
+This application is optimized for regions with high M-Pesa adoption, particularly:
+
+- Kenya
+- East Africa
+
+It addresses a critical gap:
+
+> Most users transact digitally but lack automated financial tracking tools.
+
+---
+
+## Conclusion
+
+Axis Budget transforms raw SMS transaction data into structured financial intelligence. By combining local processing, intelligent categorization, and predictive analytics, it provides users with a clear understanding of their financial behavior without introducing regulatory complexity.
+
+The architecture is designed for scalability, enabling future expansion into advanced financial analytics while maintaining a strong privacy-first foundation.
